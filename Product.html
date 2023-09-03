@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, h3, p, ul, li {
+            margin: 10;
+            padding: 10;
+        }
+
+        /* Basic styling */
+        body {
+            
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: cornflowerblue;
+        }
+        /* Hero section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            background-color: cornflowerblue;
+        }
+
+        .hero-content {
+            flex: 1;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .hero-image img {
+            max-width: 65%;
+            height: 65%;
+
+        }
+
+        /* Features section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background-color: cornflowerblue;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature img {
+            width: 100px;
+            height: 100px;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: cornflowerblue;
+            color: white;
+        }
+    </style>
+    <title>Electronic Gadgets Store</title>
+</head>
+<body>
+    <header>
+            <h1>SMART GADGET STORE</h1>
+            <h1>Presenting Various Electronic Gadgets</h1>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the Latest Electronic Gadgets</h1>
+            <h2>Explore our wide range of innovative gadgets.</h2>
+        </div>
+        <div class="hero-image">
+            <img src="https://qph.cf2.quoracdn.net/main-qimg-3951bba777563df7612eaa13268384af-lq" alt="Electronic Gadgets">
+        </div>
+    </section>
+    
+    <section class="features">
+        <div class="feature">
+            <img src="data:image/jpeg;base64,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" alt="Feature 1">
+            <h2>Smart Home Devices</h2>
+            <p>Transform your home with cutting-edge technology.</ps>
+        </div>
+        <div class="feature">
+            <img src="https://www.iberdrola.com/documents/20125/40249/wearables_746x419.jpg/f6aba1db-a78d-ceb7-0b7c-43efc4c59312?t=1627029277588" alt="Feature 2">
+            <h2>Wearable Tech</h2>
+            <p>Stay connected and monitor your health on the go.</p>
+        </div>
+        <div class="feature">
+            <img src="https://m.media-amazon.com/images/I/6142rRAO2TL._SX679_.jpg" alt="Feature 3">
+            <h2>Audio and Entertainment</h2>
+            <p>Immerse yourself in high-quality audio experiences.</p>
+        </div>
+    </section>
+    <h3>Some exiciting offers are waiting for customers at our store.</h3>
+    <h3>Do visit our store to experience them.</h3>
+    <footer>
+        <p>&copy; 2023 Electronic Gadgets Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
